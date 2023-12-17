@@ -1,0 +1,38 @@
+.EditAdmin #modal {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+ .EditAdmin .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(12, 11, 11, 0.5);
+  z-index: 2;
+  backdrop-filter: blur(1px);
+}
+.closeBtn{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  background-color: rgba(71, 69, 69, 0.256);
+
+}
+
+.close-modal {
+  font-size: 20px;
+  fill: white;
+}

@@ -1,0 +1,103 @@
+.admin {
+  width: 100%;
+  /* min-height: 100vh; */
+  background-color: rgb(205, 242, 242);
+}
+
+.admin_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid dodgerblue;
+  background-color: white;
+}
+
+.admin_header a:not(.navigation) {
+  border: 2px solid dodgerblue;
+  border-radius: 3px;
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: normal;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  fill: dodgerblue;
+  font-size: 23px;
+}
+
+a:hover:not(.navigation, .boards, .logout) {
+  background-color: dodgerblue;
+}
+
+a:hover .home {
+  fill: #fff;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navigation {
+  position: relative;
+  font-size: 1.1em;
+  color: dodgerblue;
+  font-weight: 500;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 3px;
+}
+
+.navigation:not(.active):after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.5px;
+  width: 100%;
+  height: 3px;
+  background: dodgerblue;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.navigation.active {
+  background: dodgerblue;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.loginLogout{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.adminName{
+  width: 37px;
+  height: 37px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: dodgerblue;
+color: white;
+}

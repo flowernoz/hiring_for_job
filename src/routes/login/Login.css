@@ -1,0 +1,100 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://lp-cms-production.imgix.net/features/2017/09/dubai-marina-skyline-2c8f1708f2a1.jpg?auto=compress&fit=crop&format=auto&q=50&w=1200&h=800);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login form{
+    width: 30%;
+    height: 47vh;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.login form h1{
+    padding: 10px 0;
+    color: #222;
+}
+
+.login form .username{
+width: 100%;
+height: 12vh;
+background-color: #fff;
+display: flex;
+flex-direction: column;
+}
+
+.login form .username label{
+    padding: .3vh;
+    color: #222;
+}
+
+.login form .username input{
+    width: 95%;
+    padding-left: 15px;
+    height: 7vh;
+    border: 2px solid #888;
+    border-radius: 4px;
+    outline-color: dodgerblue;
+
+}
+
+.login form .password{
+    width: 100%;
+    height: 12vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form .password label{
+    padding: 1vh;
+    color: #222;
+}
+
+.login form .password input{
+    width: 95%;
+    padding-left: 15px;
+    height: 7vh;
+    border: 2px solid #888;
+    border-radius: 4px;
+    outline-color: dodgerblue;
+}
+
+.login form button{
+    width: 95%;
+    padding: 0 7.5px;
+    height: 7vh;
+    border-radius: 4px;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgb(78, 160, 241);
+}
+
+/* ============================================ */
+
+@media screen and (max-width:1400px) {
+    .login form{
+        width: 40%;
+    }
+} 
+
+@media screen and (max-width:1200px) {
+    .login form{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .login form{
+        width: 50%;
+        height: 43vh;
+    }
+}

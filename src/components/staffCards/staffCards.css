@@ -1,0 +1,73 @@
+@import url(../conditions/conditions.css);
+.InfoCard {
+  height: 501px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fff;
+}
+
+.InfoCardBox {
+  background-color: rgb(249, 249, 249);
+  width: 370px;
+  height: 301px;
+  padding: 70px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.InfoCardBox p {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.InfoCardBox span {
+  line-height: 25px;
+}
+@media (max-width: 1190px) {
+    .InfoCard{
+        padding: 100px 50px;
+    }
+  .InfoCardBox {
+    width: 360px;
+    height: 301px;
+  padding: 40px 25px;
+justify-content: space-around;
+  }
+}
+@media (max-width: 967px) {
+ 
+  .InfoCardBox {
+    width: 360px;
+    height: 350px;
+  padding: 40px 25px;
+justify-content: space-around;
+  }
+}
+@media (max-width: 793px) {
+ .InfoCardBox p {
+  font-weight: bold;
+  font-size: 24px;
+}
+  .InfoCardBox {
+    width: 301px;
+    height: 380px;
+  padding: 40px 25px;
+justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  .InfoCard {
+    flex-direction: column;
+    height: auto;
+    padding: 70px 0;
+  }
+  .InfoCardBox {
+    padding: 40px 20px;
+    width: 94%;
+    height: 197px;
+  }
+}

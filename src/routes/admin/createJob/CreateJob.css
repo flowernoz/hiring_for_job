@@ -1,0 +1,16 @@
+.createjob {
+    width: calc(100%-300px);
+    padding: 70px ;
+}
+
+.createjob .btn-secondary {
+    width: 100%;
+}
+
+.createjob .form-container {
+    width: 50%;
+}
+
+.createjob label {
+    margin-bottom: 8px;
+}

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.edit_page {
+    width: 100%;
+    height: 100vh;
+    background-color: #021618e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+
+.edit_page .edit_form {
+    width: 63%;
+    border-radius: 10px;
+    height: 87%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2803a3;
+    transition: .9s;
+    box-shadow: 1px 1px 10px rgb(13, 0, 255);
+    gap: 20px;
+}
+
+
+.edit_page .edit_form div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.edit_page .edit_form div label {
+    color: white;
+    font-size: 22px;
+    margin: 0 0 10px 5px
+}
+
+.edit_page .edit_form div input {
+    border-radius: 5px;
+    min-height: 40px;
+    text-indent: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: none;
+    box-shadow: 1px 1px 20px white;
+    outline: none;
+    transition: .4s;
+}
+
+.edit_page .edit_form div input[type="write"] {
+    color: red;
+}
+
+.edit_page .edit_form div textarea {
+    border-radius: 5px;
+    min-height: 28px;
+    text-indent: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: none;
+    box-shadow: 1px 1px 20px white;
+    outline: none;
+    transition: .4s;
+}
+
+.edit_page .edit_form div textarea:hover {
+    color: red;
+    box-shadow: 2px 2px 20px rgb(244, 22, 22);
+
+}
+
+.edit_page .edit_form div input:hover {
+    color: red;
+    box-shadow: 2px 2px 20px rgb(244, 22, 22);
+
+}
+
+.edit_page .edit_form .editBTN {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 22px;
+    height: 52px;
+    margin-top: 39px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .9s;
+    box-shadow: 3px 3px 20px rgb(255, 255, 255);
+
+}
+
+.edit_page .edit_form .editBTN:hover {
+    letter-spacing: 5px;
+    background-color: rgb(167, 4, 4);
+    box-shadow: 3px 3px 20px rgb(255, 1, 183);
+
+}
+
+.edit_page .edit_form input[type="button"] {
+    height: 30px;
+    background-color: dodgerblue;
+    border: none;
+}

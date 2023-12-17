@@ -1,0 +1,133 @@
+.admin .vacancyCard {
+    width: 100%;
+    max-height: 100vh;
+    min-height: 91vh;
+    border: 2px solid dodgerblue;
+    /* border-radius: 5px; */
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    gap: 65px;
+    padding: 65px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.admin .vacancyCard_item {
+    height: 370px;
+    background-color: #96ff04;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition: .1s;
+    padding-bottom: 15px;
+}
+
+.admin .vacancyCard_item:hover {
+    transition: .1s;
+    /* box-shadow: 0 0 10px 10px white; */
+    transform: scale(1.1);
+    background-color: aqua;
+}
+
+.admin .vacancyCard_item:hover a {
+    background-color: white;
+    color: aqua;
+}
+
+
+.admin .vacancyCard_item img {
+    width: 100%;
+    min-height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.admin .vacancyCard_item a {
+    padding: 5px 17px;
+    border-radius: 10px;
+    background-color: aqua;
+    text-decoration: none;
+    transition: .5s;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 550;
+
+
+}
+.admin .vacancyCard_item p{
+    color: white;
+    /* background-color: aqua; */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 550;
+    transition: .5s;
+    font-size: 20px;
+}
+.admin .vacancyCard_item p:hover {
+    box-shadow: inset -160px 0 white, 0 0 5px white;
+    color: aqua;
+}
+.admin .vacancyCard_item a:hover {
+    box-shadow: inset -140px 0 #96ff04c2, 0 0 5px #96ff04;
+    color: #fff;
+}
+
+.admin .vacancyCard_item .trash {
+    border-radius: 2px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transition: 0.3s;
+    font-size: 25px;
+
+}
+
+.admin .vacancyCard_item .trash:hover {
+    background-color: white;
+    box-shadow: inset -35px 0 red, 0 0 5px white;
+    padding: 5px;
+    transition: .5s;
+    border-radius: 3px;
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.admin .vacancyCard_item .trash:nth-child(2):hover {
+    background-color: red;
+}
+
+.admin .vacancyCard_item .edit {
+    right: 50px;
+}
+
+#loading-bar-spinner.spinner {
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 19 !important;
+    animation: loading-bar-spinner 400ms linear infinite;
+}
+
+#loading-bar-spinner.spinner .spinner-icon {
+    width: 40px;
+    height: 40px;
+    border:  solid 4px transparent;
+    border-top-color:  #00C8B1 !important;
+    border-left-color: #00C8B1 !important;
+    border-radius: 50%;
+}
+
+@keyframes loading-bar-spinner {
+  0%   { transform: rotate(0deg);   transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
